@@ -1,0 +1,85 @@
+﻿.sidenav {
+    height: 90%;
+    width: 75px;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    overflow-x: hidden;
+    transform: translate(0, -50%);
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.04), 0 10px 20px rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(20px);
+    border-radius: 0 10px 10px 0;
+    transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sidenav > * {
+    padding: 12px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+    display: block;
+}
+
+.sidenav > *:hover {
+    background-color: #00A9FD;
+    color: white;
+}
+
+.sidenav.sidenav--extend {
+    width: 275px;
+}
+
+.sidenav--box-selection {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 10px auto;
+    width: 67%;
+    height: 50px;
+    border-radius: 5px;
+    transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sidenav--extend .sidenav--box-selection {
+    width: 80%;
+}
+
+.sidenav--selected {
+    background-color: #00A9FD;
+    color: white !important;
+}
+
+.sidenav--bars {
+    background-color: transparent !important;
+    color: #333 !important;
+}
+
+.sidenav--extend .sidenav--bars .fas {
+    position: absolute;
+    right: 0;
+}
+
+.sidenav--element-text {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 5px;
+    bottom: 0;
+    margin: auto 0;
+    padding-left: 50px;
+    font-size: 14px;
+    text-align: center;
+    height: 50%;
+    transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sidenav--extend .sidenav--element-text {
+    opacity: 1;
+}
+
+.sidenav--dashboard {
+    padding-left: 0;
+    font-size: 24px;
+}

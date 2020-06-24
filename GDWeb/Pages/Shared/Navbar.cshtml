@@ -1,0 +1,42 @@
+﻿@model Navbar
+
+<link rel="stylesheet" href="~/CSS/Navbar.css">
+
+<div id="Sidenav" class="sidenav">
+    <a onclick="toggleNav()" draggable="false" style="cursor: pointer" class="sidenav--box-selection sidenav--bars">
+        <div class="sidenav--element-text sidenav--dashboard">Dashboard</div>
+        <i class="fas fa-bars"></i>
+    </a>
+    <a href="#" draggable="false" class="sidenav--box-selection sidenav--selected">
+        <i class="fas fa-home"></i>
+        <div class="sidenav--element-text">Home</div>
+    </a>
+    <a href="#" draggable="false" class="sidenav--box-selection">
+        <i class="far fa-circle"></i>
+        <div class="sidenav--element-text">Circle</div>
+    </a>
+    <a href="#" draggable="false" class="sidenav--box-selection">
+        <i class="fas fa-life-ring"></i>
+        <div class="sidenav--element-text">Life ring</div>
+    </a>
+    <a href="#" draggable="false" class="sidenav--box-selection">
+        <i class="fas fa-cog"></i>
+        <div class="sidenav--element-text">Settings</div>
+    </a>
+</div>
+
+<script>
+    let toggled = false;
+
+    function toggleNav()
+    {
+        let element = document.getElementById("Sidenav");
+
+        if (!toggled)
+            element.classList.add("sidenav--extend");
+        else
+            element.classList.remove("sidenav--extend");
+
+        toggled = !toggled;
+    }
+</script>

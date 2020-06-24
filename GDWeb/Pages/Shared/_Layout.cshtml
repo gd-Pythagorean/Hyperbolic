@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>GDWeb</title>
+    <link rel="stylesheet" href="~/CSS/Site.css">
+    <link rel="stylesheet" href="~/CSS/font-awesome/css/all.css">
+</head>
+<body class="layout">
+@Html.Partial("Navbar", new Navbar())
+<div id="overlay" class="blackout blackout--overlay" style="display: none"></div>
+@RenderBody()
+</body>
+</html>

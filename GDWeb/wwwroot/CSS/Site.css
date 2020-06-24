@@ -1,0 +1,43 @@
+﻿@import "TorusFont.css";
+
+html, body {
+    font-family: "Torus", "Exo 2", "Helvetica Neue", Tahoma, Arial, "Hiragino Kaku Gothic ProN", Meiryo, "Microsoft YaHei", "Apple SD Gothic Neo", sans-serif;
+    font-weight: 300;
+}
+
+*, :before, :after {
+    position: relative;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-y: scroll;
+    position: static;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    transition: filter .2s ease-in-out, opacity .2s ease-in-out, -webkit-filter .2s ease-in-out;
+}
+
+.blackout {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 510;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: black;
+    opacity: .75;
+}
+
+.blackout--overlay {
+    z-index: 9990;
+    opacity: .4;
+}
