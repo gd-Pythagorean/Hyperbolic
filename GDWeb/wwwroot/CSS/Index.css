@@ -1,0 +1,12 @@
+﻿.index--background {
+    margin: -10px -10px -10px -85px;
+    background: url(../Media/Background.png) no-repeat;
+    background-size: contain;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}

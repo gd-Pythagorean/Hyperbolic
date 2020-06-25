@@ -7,10 +7,13 @@
     <title>GDWeb</title>
     <link rel="stylesheet" href="~/CSS/Site.css">
     <link rel="stylesheet" href="~/CSS/font-awesome/css/all.css">
+    <link rel="stylesheet" href="~/CSS/gdweb-font/css/GDWeb-Font.css">
 </head>
 <body class="layout">
 @Html.Partial("Navbar", new Navbar())
 <div id="overlay" class="blackout blackout--overlay" style="display: none"></div>
-@RenderBody()
+<div style="margin: 10px 10px 10px 85px">
+    @RenderBody()
+</div>
 </body>
 </html>
