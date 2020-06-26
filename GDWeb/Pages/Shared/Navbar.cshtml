@@ -1,4 +1,9 @@
-﻿@model Navbar
+﻿@using System.IO
+@model Navbar
+
+@{
+    var avatar = await File.ReadAllBytesAsync(@"D:\pfp (2).png");
+}
 
 <link rel="stylesheet" href="~/CSS/Navbar.css">
 
@@ -30,6 +35,10 @@
     <a href="#" draggable="false" class="sidenav--box-selection">
         <i class="fas fa-cog"></i>
         <div class="sidenav--element-text">Settings</div>
+    </a>
+    <a href="#" class="sidenav--box-selection sidenav--bars" style="left: 15px; bottom: 0; position: absolute">
+        <img class="sidenav--avatar" src="https://pbs.twimg.com/media/EZ5sNavU0AMQ-sC?format=png&name=large" alt="">
+        <div class="sidenav--element-text">Alten</div>
     </a>
 </div>
 

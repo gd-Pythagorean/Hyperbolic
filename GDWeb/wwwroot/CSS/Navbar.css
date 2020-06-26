@@ -84,3 +84,11 @@
     padding-left: 0;
     font-size: 24px;
 }
+
+.sidenav--avatar {
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 5px;
+}
