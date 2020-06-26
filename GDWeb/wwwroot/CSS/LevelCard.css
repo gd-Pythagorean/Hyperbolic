@@ -1,0 +1,111 @@
+﻿.level-card--container p {
+    font-size: 12px;
+    z-index: 2;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+}
+
+.level-card--container {
+    width: 300px;
+    height: auto;
+    background: white;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.04), 0 10px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.level-card--title {
+    font-weight: 500;
+    font-size: 18px !important;
+}
+
+.level-card--background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: .05;
+    filter: blur(20px);
+}
+
+.level-card--time {
+    text-align: end;
+}
+
+.level-card--layout {
+    display: flex;
+    flex-direction: row;
+}
+
+.level-card--information {
+    flex: 1;
+}
+
+.level-card--difficulty-bar {
+    width: 3px;
+    border-radius: 3px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 0 2px rgba(255, 153, 102, 0.12), 0 4px 8px rgba(255, 153, 102, 0.18);
+}
+
+.level-card--layout-margin {
+    margin-right: 10px;
+}
+
+.level-card--preview img {
+    height: 130%;
+    width: 100px;
+    margin: -10px -10px -10px 0;
+    object-fit: cover;
+}
+
+.level-card--overlay {
+    margin: -10px -10px -10px 0;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.level-card--overlay-black {
+    background: rgba(0, 0, 0, .25);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.level-card--overlay-black i {
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.level-card--overlay-black:hover {
+    opacity: 1;
+}
+
+.level-card--stats {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+}
+
+.level-card--stats > * {
+    margin-left: 5px;
+}

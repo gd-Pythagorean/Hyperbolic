@@ -1,0 +1,40 @@
+﻿@model GDWeb.Entities.LevelInfoSmall
+
+<link rel="stylesheet" href="~/CSS/LevelCard.css">
+
+<div class="level-card--container">
+    <div class="level-card--background" style="background-image: url('@Model.BackgroundURL')"></div>
+    <div class="level-card--layout">
+        <span class="level-card--difficulty-bar level-card--layout-margin" style="background-color: #f96"></span>
+        <div class="level-card--information level-card--layout-margin">
+            <p class="level-card--time">@Model.Length.ToString(@"m\:ss")</p>
+            <p class="level-card--title">@Model.Title</p>
+            <p>@Model.Author</p>
+            <p>@Model.Song</p>
+            <div class="level-card--stats">
+                <div class="level-card--stats">
+                    @if (Model.Ratings >= 0)
+                    {
+                        <i class="fas fa-thumbs-up"></i>
+                    }
+                    else
+                    {
+                        <i class="fas fa-thumbs-down"></i>
+                    }
+                    <p>@Model.Ratings</p>
+                </div>
+                <div class="level-card--stats">
+                    <i class="fas fa-download"></i>
+                    <p>@Model.Downloads</p>
+                </div>
+            </div>
+        </div>
+        <div class="level-card--preview">
+            <div class="level-card--overlay level-card--overlay-black">
+                <i class="fas fa-play"></i>
+            </div>
+            <div class="level-card--overlay"></div>
+            <img src="@Model.BackgroundURL" alt="">
+        </div>
+    </div>
+</div>

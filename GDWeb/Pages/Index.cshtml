@@ -1,4 +1,5 @@
 ﻿@page
+@using GDWeb.Entities
 @model Index
 <link rel="stylesheet" href="~/CSS/Index.css">
 <div class="index--background"></div>
@@ -11,3 +12,15 @@ Hello, World!
 <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
 <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
 <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+@{
+    await Html.RenderPartialAsync("Partials/LevelCard", new LevelInfoSmall
+    {
+        Title = "kjlfddskljfsdklj",
+        Author = "Alten",
+        Song = "what's a song",
+        BackgroundURL = "https://images.hdqwalls.com/download/rock-mountains-landscape-colorful-illustration-minimalist-rz-1920x1080.jpg",
+        Length = new TimeSpan(0, 3, 30),
+        Downloads = 48932,
+        Ratings = -328
+    });
+}
