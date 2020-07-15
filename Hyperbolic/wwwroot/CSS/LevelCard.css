@@ -56,6 +56,8 @@
     width: 3px;
     border-radius: 3px;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 0 2px rgba(255, 153, 102, 0.12), 0 4px 8px rgba(255, 153, 102, 0.18);
+    height: 55px;
+    margin: auto 0;
 }
 
 .level-card--layout-margin {
