@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GDWeb.Entities
+namespace Hyperbolic.Entities
 {
     public class LevelInfoSmall
     {

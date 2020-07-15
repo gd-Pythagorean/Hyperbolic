@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace GDWeb.Pages
+namespace Hyperbolic.Pages
 {
     public class Index : PageModel
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace GDWeb
+namespace Hyperbolic
 {
     public static class Program
     {

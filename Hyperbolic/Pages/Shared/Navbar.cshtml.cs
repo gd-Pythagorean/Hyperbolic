@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace GDWeb.Pages.Shared
+namespace Hyperbolic.Pages.Shared
 {
     public class Navbar : PageModel
     {
