@@ -89,6 +89,65 @@
     height: 32px;
     width: 32px;
     object-fit: cover;
-    overflow: hidden;
     border-radius: 5px;
+}
+
+.sidenav--status {
+    font-size: 10px;
+    position: absolute;
+    bottom: 5px;
+    left: 50px;
+    border-radius: 100px;
+    padding: 2px 5px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sidenav--extend .sidenav--status {
+    opacity: 1;
+}
+
+.sidenav--status-online {
+    background-color: #40BF6A;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(64, 191, 106, 0.12), 0px 4px 8px rgba(64, 191, 106, 0.18);
+}
+
+.sidenav--status-idle {
+    background: #BF8C40;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(191, 140, 64, 0.12), 0px 4px 8px rgba(191, 140, 64, 0.18);
+}
+
+.sidenav--status-dnd {
+    background: #BF405E;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(191, 64, 94, 0.12), 0px 4px 8px rgba(191, 64, 94, 0.18);
+}
+
+.sidenav--status-offline {
+    background: #808080;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 4px 8px rgba(0, 0, 0, 0.04);
+}
+
+.status--arrow {
+    position: absolute;
+    right: -20px;
+    top: 20px;
+    font-size: 10px;
+    opacity: 0;
+    transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sidenav--extend .status--arrow {
+    opacity: 1;
+}
+
+.status--arrow-icon {
+    background: #c3c3c3;
+    color: white;
+    width: 22px;
+    height: 22px;
+    padding-top: 5px;
+    padding-left: 1px;
+    text-align: center;
+    border-radius: 100px;
 }
