@@ -12,8 +12,9 @@
 <body class="layout">
 @Html.Partial("Navbar", new Navbar())
 <div id="overlay" class="blackout blackout--overlay" style="display: none"></div>
-<div style="margin: 10px 10px 10px 85px">
+<div id="app" style="margin: 10px 10px 10px 85px">
     @RenderBody()
 </div>
+<script src="JS/Site.js"></script>
 </body>
 </html>

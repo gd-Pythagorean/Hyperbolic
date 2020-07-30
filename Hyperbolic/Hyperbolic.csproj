@@ -54,10 +54,13 @@
         <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
         <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       </Content>
+      <Content Update="wwwroot\JS\Site.js">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
     </ItemGroup>
     <ItemGroup>
       <Folder Include="wwwroot\Fonts" />
-      <Folder Include="wwwroot\JS" />
       <Folder Include="wwwroot\Media" />
     </ItemGroup>
 </Project>

@@ -14,12 +14,20 @@
     transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+.dark-theme .sidenav {
+    background: rgba(51, 51, 51, 0.9);
+}
+
 .sidenav > * {
     padding: 12px;
     text-decoration: none;
     font-size: 24px;
     color: #333;
     display: block;
+}
+
+.dark-theme .sidenav > * {
+    color: #B2B2B2;
 }
 
 .sidenav > *:hover {
@@ -54,7 +62,7 @@
 
 .sidenav--bars {
     background-color: transparent !important;
-    color: #333 !important;
+    color: #333;
 }
 
 .sidenav--extend .sidenav--bars .fas {

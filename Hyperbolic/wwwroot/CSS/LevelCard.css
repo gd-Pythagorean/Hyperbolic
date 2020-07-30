@@ -8,6 +8,10 @@
     color: #333;
 }
 
+.dark-theme .level-card--container p {
+    color: #F2F2F2;
+}
+
 .level-card--container {
     width: 300px;
     height: auto;
@@ -16,6 +20,10 @@
     border-radius: 5px;
     padding: 10px;
     overflow: hidden;
+}
+
+.dark-theme .level-card--container {
+    background: #404040;
 }
 
 .level-card--title {

@@ -18,6 +18,10 @@ body {
     line-height: 1.25;
 }
 
+.dark-theme #app {
+    color: #F2F2F2;
+}
+
 .layout {
     display: flex;
     flex-direction: column;
