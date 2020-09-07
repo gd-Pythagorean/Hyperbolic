@@ -3,25 +3,43 @@
 @model Index
 <link rel="stylesheet" href="~/CSS/Index.css">
 <div class="index--background"></div>
-Hello, World!
 <button onclick="toggleDarkTheme()">Toggle Dark Theme</button>
-<img src="https://pbs.twimg.com/media/Eaegk8HUEAMdzST?format=jpg" alt="">
-<h2>Sidebar</h2>
-<p>This sidebar is of full height (100%) and always shown.</p>
-<p>Scroll down the page to see the result.</p>
-<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-@{
-    await Html.RenderPartialAsync("Partials/LevelCard", new LevelInfoSmall
-    {
-        Title = "kjlfddskljfsdklj",
-        Author = "Alten",
-        Song = "what's a song",
-        BackgroundURL = "https://images.hdqwalls.com/download/rock-mountains-landscape-colorful-illustration-minimalist-rz-1920x1080.jpg",
-        Length = new TimeSpan(0, 3, 30),
-        Downloads = 48932,
-        Ratings = -328
-    });
-}
+<div class="index--content">
+    <div class="index--content-list">
+        <p class="index--content-list-header">Popular Levels</p>
+        @{
+            for (int i = 0; i < 5; i++)
+            {
+                await Html.RenderPartialAsync("Partials/LevelCard", new LevelInfoSmall
+                {
+                    Title = "levil " + i,
+                    Author = "Alten",
+                    Song = "what's a song",
+                    BackgroundURL = "https://images.hdqwalls.com/download/rock-mountains-landscape-colorful-illustration-minimalist-rz-1920x1080.jpg",
+                    Length = new TimeSpan(0, 3, 30),
+                    Downloads = 48932,
+                    Ratings = -328
+                });
+            }
+        }
+    </div>
+    <div class="index--main">h i</div>
+    <div class="index--content-list">
+        <p class="index--content-list-header">Recently rated Levels</p>
+        @{
+            for (int i = 0; i < 5; i++)
+            {
+                await Html.RenderPartialAsync("Partials/LevelCard", new LevelInfoSmall
+                {
+                    Title = "Level " + i,
+                    Author = "Alten",
+                    Song = "what's a song",
+                    BackgroundURL = "https://images.hdqwalls.com/download/rock-mountains-landscape-colorful-illustration-minimalist-rz-1920x1080.jpg",
+                    Length = new TimeSpan(0, 3, 30),
+                    Downloads = 48932,
+                    Ratings = -328
+                });
+            }
+        }
+    </div>
+</div>

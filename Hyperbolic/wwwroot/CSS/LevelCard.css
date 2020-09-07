@@ -20,6 +20,7 @@
     border-radius: 5px;
     padding: 10px;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 .dark-theme .level-card--container {
