@@ -1,5 +1,6 @@
 ﻿@page
 @using Hyperbolic.Entities
+@using Hyperbolic.Utils
 @model Index
 <link rel="stylesheet" href="~/CSS/Index.css">
 <div class="index--background"></div>
@@ -16,9 +17,9 @@
                     Author = "Alten",
                     Song = "what's a song",
                     BackgroundURL = "https://images.hdqwalls.com/download/rock-mountains-landscape-colorful-illustration-minimalist-rz-1920x1080.jpg",
-                    Length = new TimeSpan(0, 3, 30),
-                    Downloads = 48932,
-                    Ratings = -328
+                    Length = new TimeSpan(0, RNG.Next(0, 7), RNG.Next(0, 59)),
+                    Downloads = RNG.Next(500, 5000),
+                    Ratings = RNG.Next(-1000, 1000)
                 });
             }
         }
@@ -35,9 +36,9 @@
                     Author = "Alten",
                     Song = "what's a song",
                     BackgroundURL = "https://images.hdqwalls.com/download/rock-mountains-landscape-colorful-illustration-minimalist-rz-1920x1080.jpg",
-                    Length = new TimeSpan(0, 3, 30),
-                    Downloads = 48932,
-                    Ratings = -328
+                    Length = new TimeSpan(0, RNG.Next(0, 7), RNG.Next(0, 59)),
+                    Downloads = RNG.Next(500, 5000),
+                    Ratings = RNG.Next(-1000, 1000)
                 });
             }
         }

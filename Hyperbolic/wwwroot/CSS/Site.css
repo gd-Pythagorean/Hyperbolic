@@ -1,7 +1,5 @@
-﻿@import "TorusFont.css";
-
-html, body {
-    font-family: "Torus", "Exo 2", "Helvetica Neue", Tahoma, Arial, "Hiragino Kaku Gothic ProN", Meiryo, "Microsoft YaHei", "Apple SD Gothic Neo", sans-serif;
+﻿html, body {
+    font-family: "Titillium Web", "Exo 2", "Helvetica Neue", Tahoma, Arial, "Hiragino Kaku Gothic ProN", Meiryo, "Microsoft YaHei", "Apple SD Gothic Neo", sans-serif;
     font-weight: 300;
 }
 
