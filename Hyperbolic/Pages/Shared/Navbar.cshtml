@@ -1,11 +1,4 @@
-﻿@using System.IO
-@model Navbar
-
-@{
-    var avatar = await File.ReadAllBytesAsync(@"D:\pfp (2).png");
-}
-
-<link rel="stylesheet" href="~/CSS/Navbar.css">
+﻿<link rel="stylesheet" href="~/CSS/Navbar.css">
 
 <div id="Sidenav" class="sidenav">
     <a onclick="toggleNav()" draggable="false" style="cursor: pointer" class="sidenav--box-selection sidenav--bars">

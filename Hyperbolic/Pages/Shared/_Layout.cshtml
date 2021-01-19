@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="~/CSS/gdweb-font/css/GDWeb-Font.css">
 </head>
 <body class="layout">
-@Html.Partial("Navbar", new Navbar())
+@await Html.PartialAsync("Navbar")
 <div id="overlay" class="blackout blackout--overlay" style="display: none"></div>
 <div id="app" style="margin: 10px 10px 10px 85px">
     @RenderBody()
